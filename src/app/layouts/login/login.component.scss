@@ -1,0 +1,39 @@
+form{
+    position: relative;
+    h1{
+        position: absolute;
+        top: 46px;
+        left: 641px;
+        font-weight: 400;
+    }
+    .container{
+      
+        margin-top: 100px;
+        max-width: 400px;
+        height: 500px;
+        background-color: rgb(221, 221, 221);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        .btns{
+            position: relative;
+            .btn1{
+                button{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                }
+               
+            }
+
+            .btn2{
+                position: absolute;
+                bottom: -100px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">  
+    <div class="container">   
+        <label>Username : </label>   
+        <input type="text" placeholder="Enter Username" name="username" required formControlName="userName">  
+        <br>
+        <label>Password : </label>   
+        <input type="password" placeholder="Enter Password" name="password" required formControlName="password">  
+        <br>
+        <button type="submit">Login</button>   
+        <br>
+       
+    </div>   
+</form>      -->
+
+{{name}}
+{{password}}
+
+<form >  
+    <h1>Admin Login</h1>
+   
+    <div class="container"> 
+        
+        <div class="name">
+        <label>Username : </label>   
+        <input type="text" class="form-control" placeholder="Enter Username" name="username" required  #user> 
+        </div>   
+        <br>
+        <div class="pass">
+        <label>Password : </label>   
+        <input type="password" class="form-control" placeholder="Enter Password" name="password" required  #pass>  
+        </div>
+        <br>
+        <div class="btns">
+        <div class="btn1">
+        <button  (click)="Check(user.value,pass.value)" class="btn btn-secondary btn-lg">Login</button>   </div>
+        
+        <div class="btn2">
+        <button (click)="onClear()"  class="btn btn-outline-dark">Logout</button></div>
+        </div>
+       
+    </div>   
+</form>     
